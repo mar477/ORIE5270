@@ -1,0 +1,55 @@
+## ORIE 5270
+## Spring 2020
+## Homework 4
+## Name: Mrinal Ramsaha
+## NetID: mar477
+
+Question No.1
+-----------------------------------
+The class instance is called with the reverse parameter as True or False in Sorter.py . Depending on this, the sorter will either return an ascending order list or a descending order list. The TestSorter.py is used to test the functionality of the Sorter class/function seen earlier. The following tests are done:
+
+- Blank array as input (with parameter = True)
+- Blank array as input (with parameter = False)
+- Sorting an array with no input (parameter = default)
+- Sorting an array (parameter = False)
+- Sorting an array (parameter = True)
+
+To run the test, the following is done:
+Python3 -m unittest TestSorter.py
+
+N.B. make sure that Sorter is in the same directory as TestSorter.py
+
+Question No.2
+-----------------------------------
+The program works as follows. 
+Sign: 
+If the number is greater than zero, the sign is 0
+Else, the sign is 1 and the number is multiplied by -1 to make it positive
+
+Then the integer part of the number is considered. (i.e 45 if the number is 45.45)
+We find the remainder when dividing by 2 until we reach 0, and then combine these remainders backwards to obtain the binary representation for the number. This is converted to a string (and the length is equal to the exponent)
+
+The decimal part is similarly worked in reverse. The number is multiplied by two for 100 times. If the resulting number is less than 0, 0 is added to an array. Else, if greater than 1, 1 is added to the array and subtracted from the number. 
+
+We then merge the two binary parts above as strings as the mantissa (cut to 52 digits)
+
+If there is an integral part of the number, then the exponent is calculated from the length of the binary for the integer part. Else,the first non zero entry into the decimal part is taken into consideration. The exponent is then converted to binary from the {.b} format. These three strings are added and returned as a list.
+
+The tests cover the following:
+- Converting decimals only (Eg 0.45)
+- Converting integers only (Eg 45)
+- Converting mix of integer and decimal (eg 45.45)
+- Converting negative decimal only (Eg -0.45)
+- Converting negative integer only (Eg -45)
+- Converting negative mix of integer and decimal (eg -45.45)
+
+Question No.3
+-------------------------------------
+1) For the desolation, all the tests pass when b and c are small enough
+2) When b is large and c is small, the tests fail. This is because of floating point approximations and catastrophic cancellation occurs and one of the roots (or both) turn out to not be equal to the real root. Here, this fails for b= 123451234 and c = 21.
+Here x1 = 246902468.00000006 and x2 = -8.5053827813499e-8
+Here x1*x2 = -20.999999999999954 while the real value is -21.0 
+Also x1+x2 = 246902467.99999997 while the real value is 246902468.0
+3) Here, we break the code into two parts for each root.
+
+The first root (X1) is used as before in the naive way of calculating. The second root is then calculated from a derived quadratic equation from the conjugate sq root. This can also be calculated as c/x1. The code works here because of how the formula avoids the computation where the floating point arithmetic error occurs, and changes the computation order/process. Thus the revised solution passes the test.
