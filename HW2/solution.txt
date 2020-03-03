@@ -1,0 +1,233 @@
+### ORIE 5270
+#### Spring 2020
+#### Mrinal Ramsaha (mar477)
+
+The Git URL is : https://github.coecis.cornell.edu/mar477/ORIE5270.git
+
+##### Problem 2
+
+The libraries to install are:
+
+| requests | pandas | io | gzip | numpy | matplotlib
+
+The script is broken down into three parts as described by the comments.
+
+###### Part 1: 
+The first ten rows of df are given by: (when the script is called)
+
+|       | Names           | NbrFriends |
+| ------| --------------  | ---------- |               
+|0      | Randy Lavergne  | 347 |
+|1      | Jamie Jones     | 17  |
+|2      | Jana Griggs     | 10  |
+|3      | Charles Ericson | 17  |
+|4      | Susan Adams     | 10  |
+|5      | Wendy Pettit    | 13  |
+|6      | James Lanier    | 6   |
+|7      | Shirley Burnside| 20  |
+|8      | David Khensovan | 8   |
+|9      | Laura Vanburen  | 57  |
+
+###### Part 2:
+The output is as follows: (when the script is called)
+
+Delores Mullins is a very sociable person, he has 1045 friends
+
+Gene Johnson is a solitary person, he has only 1 friends
+
+David Tse is a solitary person, he has only 1 friends
+
+Martha Swift is a solitary person, he has only 1 friends
+
+Amy Armbruster is a solitary person, he has only 1 friends
+
+Fermin Jones is a solitary person, he has only 1 friends
+
+Adele Bellomy is a solitary person, he has only 1 friends
+
+Kristopher Garcia is a solitary person, he has only 1 friends
+
+Mary Pishko is a solitary person, he has only 1 friends
+
+Steven Heitmeyer is a solitary person, he has only 1 friends
+
+Virginia Agosto is a solitary person, he has only 1 friends
+
+Mike Weeks is a solitary person, he has only 1 friends
+
+Amy Evans is a solitary person, he has only 1 friends
+
+Jack Young is a solitary person, he has only 1 friends
+
+Tamara Mcdonald is a solitary person, he has only 1 friends
+
+Monica Godbey is a solitary person, he has only 1 friends
+
+George Saenz is a solitary person, he has only 1 friends
+
+Bruce Crouch is a solitary person, he has only 1 friends
+
+Anthony Reese is a solitary person, he has only 1 friends
+
+Myles Brown is a solitary person, he has only 1 friends
+
+Mary Betterton is a solitary person, he has only 1 friends
+
+Frank Hardy is a solitary person, he has only 1 friends
+
+Madge Rivera is a solitary person, he has only 1 friends
+
+Javier Benham is a solitary person, he has only 1 friends
+
+Grace Yasutomi is a solitary person, he has only 1 friends
+
+Kimberly Castro is a solitary person, he has only 1 friends
+
+Edward Zuchowski is a solitary person, he has only 1 friends
+
+Robert Hokula is a solitary person, he has only 1 friends 
+
+Richard Dannenberg is a solitary person, he has only 1 friends
+
+Marc Davis is a solitary person, he has only 1 friends
+
+Frederick Hooper is a solitary person, he has only 1 friends
+
+Jacqueline Wells is a solitary person, he has only 1 friends
+
+Jesse Fisher is a solitary person, he has only 1 friends
+
+Christine Ricard is a solitary person, he has only 1 friends
+
+Bonnie Karr is a solitary person, he has only 1 friends
+
+Leo Levine is a solitary person, he has only 1 friends
+
+Douglas Quiles is a solitary person, he has only 1 friends
+
+Keith Collelo is a solitary person, he has only 1 friends
+
+Mary Castleman is a solitary person, he has only 1 friends
+
+Monica Marez is a solitary person, he has only 1 friends
+
+Maria Bickmore is a solitary person, he has only 1 friends
+
+Christopher Espericueta is a solitary person, he has only 1 friends
+
+Lucy James is a solitary person, he has only 1 friends
+
+Petra Erickson is a solitary person, he has only 1 friends
+
+Leonard Guadalupe is a solitary person, he has only 1 friends
+
+Bryan Sauer is a solitary person, he has only 1 friends
+
+Therese Menotti is a solitary person, he has only 1 friends
+
+Angelia Garland is a solitary person, he has only 1 friends
+
+Jane Salazar is a solitary person, he has only 1 friends
+
+Jose Freeman is a solitary person, he has only 1 friends
+
+Robert Livoti is a solitary person, he has only 1 friends
+
+Robert Nelson is a solitary person, he has only 1 friends
+
+Jewell Orozco is a solitary person, he has only 1 friends
+
+Margaret Mcreynolds is a solitary person, he has only 1 friends
+
+Robert Gaskin is a solitary person, he has only 1 friends
+
+Marcus Tiblier is a solitary person, he has only 1 friends
+
+Chad Juenemann is a solitary person, he has only 1 friends
+
+Burton Paterson is a solitary person, he has only 1 friends
+
+Michael Lembo is a solitary person, he has only 1 friends
+
+James Olson is a solitary person, he has only 1 friends
+
+Sheri Luer is a solitary person, he has only 1 friends
+
+Mildred Velasquez is a solitary person, he has only 1 friends
+
+Inez Williams is a solitary person, he has only 1 friends
+
+Herlinda Carlton is a solitary person, he has only 1 friends
+
+Alfred Sotelo is a solitary person, he has only 1 friends
+
+Kerri Shockley is a solitary person, he has only 1 friends
+
+Brian Reichel is a solitary person, he has only 1 friends
+
+Cynthia Serna is a solitary person, he has only 1 friends
+
+Bob Creed is a solitary person, he has only 1 friends
+
+Andrea Hudek is a solitary person, he has only 1 friends
+
+Mae Barber is a solitary person, he has only 1 friends
+
+Katherine Sturm is a solitary person, he has only 1 friends
+
+Jennifer Casillas is a solitary person, he has only 1 friends
+
+Charles Fitzgerald is a solitary person, he has only 1 friends
+
+Johnny Slater is a solitary person, he has only 1 friends
+
+Kathryn Gumina is a solitary person, he has only 1 friends
+
+###### Part 3:
+
+
+The text (output2.txt) file contains the mean,median and variance of the number of friends
+
+The pdf (output2.pdf) file contains the histogram of the number of friends
+
+#### Question 3:
+
+The libraries to install are:
+
+| os | Keras | dumpy | Matplotlib |
+
+Running the script (p3.py) will print out the summary of variables in the layers, and also output at each echo for each model. There are also three output graphs.
+p3_output1.pdf --> Initial Convolution network
+p3_output2.pdf --> Initial model + normalization layer after first convolutional layer
+p3_output3.pdf --> Initial model + dropout-layer(rate=0.15) after first convolutional layer
+
+We observe the following:
+The val_loss (or test loss) is the same for models 1 and 3, and the loss (or train loss) is also the same for the two models. This means that the dropout layer did not do much change
+On the other hand, there is a decrease in both the val_loss and loss values for model 2(with the normalization layer), where the value are always below the values for model 1 and 3(which are above 14.56 for the val_loss) at values around the 2 level.
+So, a normalization layer is useful in reducing error.
+
+
+The summary is shown below:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_29 (Conv2D)           (None, 15, 15, 32)        896       
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 15, 15, 32)        0         
+_________________________________________________________________
+max_pooling2d_15 (MaxPooling (None, 14, 14, 32)        0         
+_________________________________________________________________
+conv2d_30 (Conv2D)           (None, 12, 12, 64)        18496     
+_________________________________________________________________
+flatten_15 (Flatten)         (None, 9216)              0         
+_________________________________________________________________
+dense_29 (Dense)             (None, 1000)              9217000   
+_________________________________________________________________
+dense_30 (Dense)             (None, 10)                10010     
+=================================================================
+Total params: 9,246,402
+Trainable params: 9,246,402
+Non-trainable params: 0
+_________________________________________________________________
+None
+
