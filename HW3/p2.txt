@@ -1,0 +1,9 @@
+# ORIE 5270
+# Spring 2020
+# Name:Mrinal Ramsaha
+# NetId: mar477
+
+The complexity is given by O(n log n) since the sort function is in worst case a (n log n) function.
+
+Note: In case sorted cannot be used, the second method using arrays gives a complexity
+of O(n^2) worst case
